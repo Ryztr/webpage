@@ -22,6 +22,19 @@ img, picture, svg, video{
 
 }
 
+button {
+    -webkit-appearance: none;
+    border-radius: 0;
+    text-align: inherit;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    font: inherit;
+  }
+
 /* header */
 
 .header{
@@ -34,6 +47,7 @@ img, picture, svg, video{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0;
 }
 
 .navbar__logo{
@@ -47,21 +61,79 @@ ul li{
 }
 
 li a{
-    color: #e5e7ebdf;
+    color: #E5E7EB;
+    font-size: 18px;
     text-decoration: none;
 }
 
 .navbar__list{
     display: flex;
-    gap:1rem;
+    gap:2rem;
 }
 
 /* hero */
 
-.main{
-    background-color: #1F2937 ;
+
+.hero{
+    padding: 7rem 0;
 }
+
+.hero__left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex:1;
+
+    /* I did this because I want to respectt the image example from TOP where the container of text is smaller < than the image container */
+    /* Although is not very flexible I can opt for a media at a max size and for a  column so the image would be 100% */
+}
+
+.hero__title{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.hero__description{
+    font-size: 18px;
+    /* width: 45ch; */
+    color: #E5E7EB;
+    
+}
+
+.hero__btn{
+    color: #FFFF;
+    background-color: #3882F6;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+
 .container{
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:2rem;
+}
+
+.container > *{
+    /* flex:1; */
+}
+
+.hero__image-container{
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    flex:1;
+}
+
+.hero__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block  ;
 }

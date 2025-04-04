@@ -4,4 +4,5 @@ I created this web page to test my knowledge about HTML and CSS that I learned s
 
 ## Credits:
 
-Images: 
+#Header image: Photo by Jopwell: https://www.pexels.com/photo/woman-in-blue-suit-jacket-2422293/
+
