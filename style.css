@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font:inherit;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+
+img, picture, svg, video{
+    display: block;
+    max-width: 100%;
+
+}
+
+/* header */
+
+.header{
+    background-color: #1F2937 ;
+}
+
+.navbar__container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    font-weight: 600;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+li a{
+    color: #e5e7ebdf;
+    text-decoration: none;
+}
+
+.navbar__list{
+    display: flex;
+    gap:1rem;
+}
+
+/* hero */
+
+.main{
+    background-color: #1F2937 ;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
