@@ -9,7 +9,7 @@
 <body>
 
 <header class="header">
-    <nav class="navbar">
+    <nav class="navbar container">
         <div class="navbar__logo">
             Header Logo
         </div>
@@ -19,17 +19,72 @@
             <li><a href="#">Contact</a></li>
         </ul>        
     </nav>
-
-    <section class="header__section">
-        <h1 class="header__section-title">This website is awesome</h1>
-        <p class="header__section-description">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-        <button class="btn">Sign up</button>
-        <div class="image__container">
-            <img src="" alt="An image of people working togheter on a product">
-        </div>
-    </section>
 </header>
 
+<main class="main">
+    <section class="hero">
+        <div class="container">
+            <div class="hero__left">
+                <h1 class= "hero__title">This website is awesome</h1>
+                <p class="hero__description">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+                <button class="hero__btn">Sign up</button>
+                <div class="hero__image-container">
+            </div> 
+                <img class="hero__image" src="" alt="An image of people working togheter on a product">
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="about__title">Some random information.</h2>
+            <div class="about__container">
+                <div class="about__container-card">
+                    <div class="about__container-card-image"><img src="" alt="">
+                    </div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+
+                <div class="about__container-card">
+                    <div class="about__container-card-image"><img src="" alt="">
+                    </div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+
+                <div class="about__container-card">
+                    <div class="about__container-card-image"><img src="" alt="">
+                    </div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+
+                <div class="about__container-card">
+                    <div class="about__container-card-image"><img src="" alt="">
+                    </div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonials__container">
+            <p class="testimonials__quote">This is an inspiring quote or a testimonial from a customer. Maybe it's just filling up space or maybe people will actually read it. Who knows? All I know is that it looks nice. </p>
+            <p class="testimonials__name">-Thor, God of Thunder</p>
+        </div>
+    </section>
+
+    <section class="CTA">
+        <div class="CTA__card">
+            <p class="CTA__title">Call to action! It's time!</p>
+            <p class="CTA__description">Sign up for our product by clicking that button right over there!</p>
+            <button class="CTA__btn">Sign up</button>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    Copyright © The Odin Project 2021
+</footer>
 
 </body>
 </html>
