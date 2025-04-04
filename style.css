@@ -78,16 +78,6 @@ li a{
     padding: 7rem 0;
 }
 
-.hero__left{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    flex:1;
-
-    /* I did this because I want to respectt the image example from TOP where the container of text is smaller < than the image container */
-    /* Although is not very flexible I can opt for a media at a max size and for a  column so the image would be 100% */
-}
 
 .hero__title{
     font-size: 48px;
@@ -110,7 +100,7 @@ li a{
     border-radius: 0.5rem;
 }
 
-.container{
+.hero__container{
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -119,8 +109,12 @@ li a{
     gap:2rem;
 }
 
-.container > *{
-    /* flex:1; */
+.hero__left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex:1;
 }
 
 .hero__image-container{
@@ -135,5 +129,56 @@ li a{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block  ;
+    object-position: 0% 20%;
+    display: block;
+}
+
+
+/* about */
+
+.about{
+    background-color: #FFFF;
+}
+
+.about__container{
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.about__title{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+}
+
+.about__container-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    gap: 2rem;
+    width: ;
+}
+
+.about__container-card{
+    display: flex;
+    /* align-items: center; */
+    gap: 0.5rem;
+    flex-direction: column;
+    height: 300px;
+    text-align: center;
+}
+
+.about__container-card-image{
+    border: 4px solid #3882F6;
+    border-radius: 12px;
+    /* height: 200px;
+    width: 200px; */
+    flex:1 1 0;
+}
+
+
+.about__container-card-description{
+    /* width: 200px; */
 }
