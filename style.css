@@ -100,6 +100,7 @@ li a{
     background-color: #3882F6;
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
+    font-weight: 500;
 }
 
 .hero__container{
@@ -115,7 +116,7 @@ li a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 1rem;
     flex:1;
 }
 
@@ -206,4 +207,47 @@ li a{
 .testimonials__name{
     text-align: end;
     font-weight: bolder;
+}
+
+/* CTA */
+
+.CTA{
+    min-height: 300px;
+    display: flex;
+}
+
+.CTA__card{
+    margin: auto auto;
+    background-color: #3882F6;
+    border-radius: 12px;
+    width: 80%;
+    height: 150px;
+    color: #fff;
+    /* flex settings */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 700px){
+    .CTA__card-left{
+        text-align: center;
+    }
+}
+
+.CTA__title{
+    font-weight: 600;
+}
+
+.CTA__description{
+    color: #E5E7EB;
+}
+
+.CTA__btn{
+    color: #FFFF;
+    border: 2px solid #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
 }
